@@ -8,7 +8,7 @@ This project has been commissioned by [Blocktech.dk](https://www.blocktech.dk).
 
 ## Documentation
 
-You can read the latest documentation at <https://transumption.github.io/concordium-schema>.
+You can read the latest documentation at <https://redesigned-sniffle-7c4ef811.pages.github.io>.
 
 ## Installation
 
