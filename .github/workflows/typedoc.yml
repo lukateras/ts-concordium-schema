@@ -1,0 +1,21 @@
+name: Deploy Typedoc to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  typedoc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.5.1
+
+      - name: Build Typedoc
+        run: |
+          npm ci
+          npx typedoc
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
+        with:
+          branch: gh-pages
+          folder: docs
